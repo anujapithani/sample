@@ -1,0 +1,12 @@
+<h1>welcome to user details</h1>
+<ul>
+  <% @users.each do |user| %>
+    <li>
+     NAME: <%= user.name %><br>
+      PHNO:<%= user.phno %><br>
+      EMAIL:<%= user.email %><br>
+      AGE:<%= user.age %><br>
+    </li>
+  <% end %>
+</ul>
+<%= stylesheet_link_tag 'index.css' %>
